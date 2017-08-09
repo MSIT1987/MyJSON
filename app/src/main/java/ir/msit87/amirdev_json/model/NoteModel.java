@@ -1,7 +1,10 @@
-package ir.msit87.amirdev_json;
+package ir.msit87.amirdev_json.model;
 
 import android.app.Activity;
 import android.content.Intent;
+
+import ir.msit87.amirdev_json.AddDrawingActivity;
+import ir.msit87.amirdev_json.AddNoteActivity;
 
 /**
  * NoteModel Class Created by MSIT on 8/7/2017.

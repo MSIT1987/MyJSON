@@ -18,7 +18,6 @@ public class NotePresenter implements NoteView.OnNewNoteRequestListener {
     }
 
 
-
     @Override
     public void onNewTextNoteRequest() {
         model.newTextNoteRequest();

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="main_bg">#F5F5F5</color>
+
+    <!-- toolbar -->
+    <color name="main_toolbar">#fff</color>
+    <color name="save_menu_item">#E0F2F1</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="white">#fafafa</color>
+
+    <!-- Fab -->
+    <color name="fab_icon_color">#000</color>
+    <color name="fab_color">#8BC34A</color>
+    <color name="fab_mini_color">#8BC34A</color>
+    <color name="fab_pressed_color">#f1f1f1</color>
+
+    <!-- Menu -->
+    <color name="menu_separator_color">#9E9E9E</color>
+    <color name="menu_bg">#fff</color>
+    <color name="menu_item_ripple_effect">#E0E0E0</color>
+</resources>

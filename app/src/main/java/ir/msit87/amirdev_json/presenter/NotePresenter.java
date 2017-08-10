@@ -32,4 +32,7 @@ public class NotePresenter implements NoteView.OnNewNoteRequestListener {
         view.setPresenter(this);
         view.setToolbarTitle(model.getFolderName());
     }
+
+    public void onDestroy() {
+    }
 }

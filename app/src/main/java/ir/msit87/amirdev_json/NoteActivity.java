@@ -32,12 +32,18 @@ public class NoteActivity extends AppCompatActivity implements NotesListFragment
     }
 
     @Override
-    public void onNoteClick(NoteStruct notes) {
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.onDestroy();
+    }
 
+    @Override
+    public void onNoteClick(NoteStruct notes) {
+        model.editNoteRequest(notes);
     }
 
     @Override
     public void onImageClick(String id) {
-
+        model.removeNote(id);
     }
 }

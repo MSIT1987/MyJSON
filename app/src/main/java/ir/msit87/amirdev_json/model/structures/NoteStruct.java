@@ -30,6 +30,7 @@ public class NoteStruct implements Parcelable {
         text = cursor.getString(cursor.getColumnIndex(DataContract.NoteEntry.COLUMN_NOTE_TEXT));
         folder_id = cursor.getString(cursor.getColumnIndex(DataContract.NoteEntry.COLUMN_FOLDER_ID));
         drawing = cursor.getBlob(cursor.getColumnIndex(DataContract.NoteEntry.COLUMN_NOTE_DRAW));
+        painting = text == null;
     }
 
     /**

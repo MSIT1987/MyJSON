@@ -1,8 +1,10 @@
 package ir.msit87.amirdev_json;
 
+import android.support.v7.app.AppCompatActivity;
+
 /**
  * Created by MSIT on 8/7/2017.
  */
 
-public class AddDrawingActivity {
+public class AddDrawingActivity extends AppCompatActivity {
 }

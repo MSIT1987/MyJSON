@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NoteActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,11 +19,21 @@
             </intent-filter>
         </activity>
 
-        <!--<activity-->
-            <!--android:name=".NoteActivity"-->
-            <!--android:screenOrientation="portrait" />-->
+        <!--<provider-->
+            <!--android:name=".model.db.DataProvider"-->
+            <!--android:authorities="ir.coursio.notes"-->
+            <!--android:exported="false" />-->
 
-
+        <activity
+            android:name=".NoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddDrawingActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 

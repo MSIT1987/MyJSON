@@ -55,7 +55,6 @@ public class NoteAdapter extends RecyclerView.Adapter {
 
     public interface OnNoteAdapterClickListener {
         void onNoteAdapterClick(NoteStruct note);
-
         void onNoteAdapterDelete(String id);
     }
 
@@ -114,7 +113,7 @@ public class NoteAdapter extends RecyclerView.Adapter {
         }
     }
 
-    private void swapData(ArrayList<NoteStruct> notes){
+    public void swapData(ArrayList<NoteStruct> notes){
         if(notes.size() < 1){
             this.note.clear();
             this.note.addAll(notes);

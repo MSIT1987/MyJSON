@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/menu_folder_padding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_id_desc"
+        android:src="@drawable/ic_folder_36dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtFolderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_folder_text_margin"
+        android:layout_marginRight="@dimen/menu_folder_text_margin"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textSize="@dimen/menu_folder_text_size" />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/menu_delete_item_size"
+        android:layout_height="@dimen/menu_delete_item_size"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/img_delete_desc"
+        android:scaleType="center"
+        android:src="@drawable/ic_delete_24dp" />
+
+</LinearLayout>

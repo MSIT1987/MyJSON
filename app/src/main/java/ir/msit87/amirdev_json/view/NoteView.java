@@ -2,6 +2,9 @@ package ir.msit87.amirdev_json.view;
 
 import android.app.Activity;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.LoaderManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -41,10 +44,24 @@ public class NoteView extends FrameLayout implements View.OnClickListener {
         FloatingActionButton fabAddDrawing = (FloatingActionButton) view.findViewById(R.id.fabAddDrawing);
         fabAddDrawing.setTag(ClickedItemType.DRAWING);
         fabAddDrawing.setOnClickListener(this);
+
+        //
+        FragmentManager fragmentManager = ((FragmentActivity)activity).getSupportFragmentManager();
+        LoaderManager loaderManager = ((FragmentActivity)activity).getSupportLoaderManager();
+
+
+
     }
 
     @Override
     public void onClick(View v) {
+        fabAddNote.collapse();
+        switch ((ClickedItemType) v.getTag()){
+            case TEXT:
+                notePresenter.onNewTextNoteRequest();
+            case DRAWING:
+                notePresenter.onNewDrawingNoteRequest();
+        }
 
     }
 

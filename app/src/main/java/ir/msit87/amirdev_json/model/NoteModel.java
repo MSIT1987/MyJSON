@@ -12,8 +12,8 @@ import ir.msit87.amirdev_json.AddNoteActivity;
 
 public class NoteModel {
 
-    private static final String FOLDER_ID = "folder_id";
-    private static final String FOLDER_NAME = "folder_name";
+    public static final String FOLDER_ID = "folder_id";
+    public static final String FOLDER_NAME = "folder_name";
 
     private final Activity activity;
 
@@ -33,5 +33,12 @@ public class NoteModel {
         activity.startActivity(intent);
     }
 
-
+    /**
+     * Gets current folder's name.
+     *
+     * @return The String folder's name
+     */
+    public String getFolderName() {
+        return activity.getIntent().getStringExtra(FOLDER_NAME);
+    }
 }

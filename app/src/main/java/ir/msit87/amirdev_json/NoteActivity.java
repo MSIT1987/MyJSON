@@ -7,12 +7,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class NoteActivity extends AppCompatActivity {
+import ir.msit87.amirdev_json.model.NoteModel;
+import ir.msit87.amirdev_json.model.structures.NoteStruct;
+import ir.msit87.amirdev_json.presenter.NotePresenter;
+import ir.msit87.amirdev_json.view.NoteView;
+import ir.msit87.amirdev_json.view.list.NotesListFragment;
+
+public class NoteActivity extends AppCompatActivity implements NotesListFragment.OnNoteClickListener {
+
+    NoteView view;
+    NotePresenter presenter;
+    NoteModel model;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_note);
+
+        model = new NoteModel(this);
+        view = new NoteView(this);
+        setContentView(view);
+        presenter = new NotePresenter(view, model);
+        presenter.onCreate();
+
     }
 
+    @Override
+    public void onNoteClick(NoteStruct notes) {
+
+    }
+
+    @Override
+    public void onImageClick(String id) {
+
+    }
 }

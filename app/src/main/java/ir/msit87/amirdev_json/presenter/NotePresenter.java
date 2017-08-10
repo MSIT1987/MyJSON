@@ -27,4 +27,9 @@ public class NotePresenter implements NoteView.OnNewNoteRequestListener {
     public void onNewDrawingNoteRequest() {
         model.newDrawingNoteRequest();
     }
+
+    public void onCreate() {
+        view.setPresenter(this);
+        view.setToolbarTitle(model.getFolderName());
+    }
 }

@@ -1,9 +1,10 @@
-package ir.msit87.amirdev_json;
+package ir.msit87.amirdev_json.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import eu.amirs.JSON;
+import ir.msit87.amirdev_json.R;
 
 public class MainActivity extends AppCompatActivity {
 

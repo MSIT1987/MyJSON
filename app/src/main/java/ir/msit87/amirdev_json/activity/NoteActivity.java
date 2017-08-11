@@ -1,4 +1,4 @@
-package ir.msit87.amirdev_json;
+package ir.msit87.amirdev_json.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

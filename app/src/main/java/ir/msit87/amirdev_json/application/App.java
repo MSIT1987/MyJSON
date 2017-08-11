@@ -1,4 +1,4 @@
-package ir.msit87.amirdev_json;
+package ir.msit87.amirdev_json.application;
 
 import android.app.Application;
 import android.content.Context;

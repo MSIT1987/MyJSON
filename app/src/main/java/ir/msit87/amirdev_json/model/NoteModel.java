@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
-import ir.msit87.amirdev_json.AddDrawingActivity;
-import ir.msit87.amirdev_json.AddNoteActivity;
-import ir.msit87.amirdev_json.App;
+import ir.msit87.amirdev_json.activity.AddDrawingActivity;
+import ir.msit87.amirdev_json.activity.AddNoteActivity;
+import ir.msit87.amirdev_json.application.App;
 import ir.msit87.amirdev_json.model.db.DataContract;
 import ir.msit87.amirdev_json.model.structures.NoteStruct;
 

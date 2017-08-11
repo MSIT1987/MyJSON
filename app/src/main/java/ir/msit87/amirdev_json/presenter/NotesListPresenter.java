@@ -9,7 +9,7 @@ import android.support.v4.content.Loader;
 
 import java.util.ArrayList;
 
-import ir.msit87.amirdev_json.App;
+import ir.msit87.amirdev_json.application.App;
 import ir.msit87.amirdev_json.component.NotesComponent;
 import ir.msit87.amirdev_json.model.db.DataContract;
 import ir.msit87.amirdev_json.model.structures.NoteStruct;
